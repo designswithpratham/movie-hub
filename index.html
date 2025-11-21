@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <div class="top-div">
+       <h1 onclick="scrollToTop()"> Movie </h1>
+          <img src="./image.png" alt="hub image">
+    </div>
+       
+        <input type="text" id="searchInput" placeholder="Search movies...">
+    </header>
+
+    <button id="homeBtn" onclick="scrollToTop()">🏠 Home</button>
+
+    <main id="movieContainer"></main>
+
+    <!-- Modal for Movie Details -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">×</span>
+            <img id="modalPoster" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalOverview"></p>
+            <p id="modalRating"></p>
+        </div>
+    </div>
+  <footer>
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Designed By</h3>
+            <ul>
+                <li>Pratham Goel</li>
+                <li>Vaibhav Mishra</li>
+                <li>Arpit Jaitely</li>
+                <li>Soham Sharma</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>movieapp@example.com</li>
+                <li>+91 8700670416</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+                <li onclick="scrollToTop()" style="cursor:pointer;">Home</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copy-text">© 2025 Movie Explorer. All rights reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
